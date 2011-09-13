@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+    <title>Replay Dog</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
